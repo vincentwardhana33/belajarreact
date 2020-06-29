@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Sidebar extends Component {
   render() {
@@ -6,21 +7,21 @@ class Sidebar extends Component {
       <div className="sidebar-menu sticky-sidebar-menu">
         <div className="logo">
           <h1>
-            <a href="index.html">Collective</a>
+            <Link to="/">Collective</Link>
           </h1>
         </div>
         <div className="logo-icon text-center">
-          <a href="index.html" title="logo">
+          <Link to="/">
             <img src="assets/images/logo.png" alt="logo-icon" />
-          </a>
+          </Link>
         </div>
         <div className="sidebar-menu-inner">
           <ul className="nav nav-pills nav-stacked custom-nav">
             <li className="active">
-              <a href="index.html">
+              <Link to="/">
                 <i className="fa fa-tachometer" />
                 <span> Dashboard</span>
-              </a>
+              </Link>
             </li>
             <li className="menu-list">
               <a href="#">
@@ -42,9 +43,9 @@ class Sidebar extends Component {
               </ul>
             </li>
             <li>
-              <a href="pricing.html">
+              <Link to="/pricing">
                 <i className="fa fa-table" /> <span>Pricing tables</span>
-              </a>
+              </Link>
             </li>
             <li>
               <a href="blocks.html">

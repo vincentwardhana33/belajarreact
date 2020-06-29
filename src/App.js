@@ -1,12 +1,15 @@
 import React, { Component } from "react";
+import { Route } from 'react-router-dom';
 
 import Homepage from "./component/Homepage";
+import Pricing from "./component/Pricing";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Homepage />
+        <Route exact path="/" component={Homepage}/>
+        <Route path="/pricing" component={Pricing}/>
       </div>
     );
   }
