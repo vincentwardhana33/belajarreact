@@ -4,7 +4,18 @@ import Sidebar from "./Sidebar";
 import Header from "./Header";
 import Footer from "./Footer";
 
+var loadjs = require('loadjs');
+
 class Homepage extends Component {
+  componentWillMount() {
+    loadjs([
+      '../assets/js/bar.js',
+      '../assets/js/linechart.js'
+    ], 
+    function() {
+    });
+  }
+
   render() {
     return (
       <div>
